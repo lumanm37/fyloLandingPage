@@ -16,7 +16,7 @@ The designs were created to the following widths:
 
 ### Accent
 
-- Bright Blue: hsl(224, 93%, 58%)
+- Bright Blue:  
 - Moderate Cyan: hsl(170, 45%, 43%)
 
 ### Neutral
@@ -24,7 +24,7 @@ The designs were created to the following widths:
 - Light Grayish Blue: hsl(240, 75%, 98%)
 - Light Gray: hsl(0, 0%, 75%)
 
-## Typography
+## Typography   
 
 ### Headings, Call-to-actions, Header Navigation
 
@@ -35,3 +35,9 @@ The designs were created to the following widths:
 
 - Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
 - Weights: 400
+
+Feel free to remove these styles or customise in your own stylesheet 👍
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
