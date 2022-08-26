@@ -16,8 +16,9 @@ h1{
 /* -------HEADER------- */
 
 header{
+    /* border:2px solid red; */
     display:flex;
-    padding:20px 3%;
+    padding:40px 5%;
     justify-content: space-between;
  }
     header img{
@@ -79,7 +80,7 @@ header{
     /* GETTING STARTED SECTION */
 
 #getStarted{
-    padding:0 3%;
+    padding:0 5%;
     display: flex;
     margin-top: 50px;    
 }    
@@ -89,58 +90,86 @@ flex:5 ;
 display: flex;
 flex-direction: column;
 justify-content: center;
-animation:fadIn 1s ease-in 1.2s forwards;
-opacity:0;
+/* animation:fadIn 1s ease-in 1.2s forwards; */
+/* opacity:0; */
 }
 
-@keyframes fadIn {
+/* @keyframes fadIn {
     from{opacity:0;}
     to{opacity: 1;}
-}
+} */
 
 
 
-#intro p{
-    font-size: 15px;
+#paragraph {
+    font-size: 16px;
     margin-bottom: 3%;
-    width:90%;
+    /* width:95%; */
     
 }
 
 input{
-width:50%;
-height:3em; 
+width:52%;
+height:45px; 
 margin-right: 2%;
-padding-left:5px;   
-border:1px solid #ccc;
-border-radius:3px;      
+padding-left:7px;   
+border:1px solid #aaa;
+border-radius:3px; 
+/* height:3em;      */
+/* border:2px solid black */
 }
+
+form{
+    /* border:1px solid red; */
+}
+
+.errorMsg{
+font-size:10px;
+margin:3px;
+color:red;
+/* opacity: 0; */
+/* border:2px solid black */
+}
+
+/* input:valid{
+background-color: red;
+    
+} */
+
+/* input[value="1"]:focus{
+    background-color: red;
+        
+    }
+     */
+
 
 input:focus{
     outline:none;
-    box-shadow: 0px 0px 5px gray;
+    /* box-shadow: 0px 0px 5px gray; */
 }
 
 button{
-width:30%;
-height:3em;
+width:37%;
+/* height:3em; */
+height:45px;
 border:none;
 color:white;
 cursor:pointer;
 font-family: 'Raleway', sans-serif;
 border-radius:3px;  
-box-shadow: 0px 0px 5px hsl(224, 93%, 58%);  
+/* box-shadow: 0px 0px 5px hsl(224, 93%, 58%);   */
 background-color:hsl(224, 93%, 58%) ;  
-transition:0.5s;  
+/* transition:0.5s;   */
+/* border:2px solid blue; */
 }
 
 
 button:hover{
     background-color:hsl(228,74%,74%) ;
-    box-shadow:none;
+    /* box-shadow:none;
     font-weight:200;
     height:40px;
-    width:30.5%;
+    width:30.5%; */
     
 }
 
@@ -149,15 +178,15 @@ flex:6;
 display:flex;
 justify-content: center;
 align-items: center;
-animation:slideInBg 1s ease-out 0.3s backwards ;
+/* animation:slideInBg 1s ease-out 0.3s backwards ; */
 position:relative;
 /* right: -700px; */
 }
 
-@keyframes slideInBg {
+/* @keyframes slideInBg {
     from{right:-700px}
     to{right:0px;}
-}
+} */
 
 #introBg img{
     max-width:100%;
@@ -177,7 +206,7 @@ position:relative;
         align-items: center;
         text-align: center;
     }
-    h1{
+    #getStarted h1{
         font-size: 25px;
     }
     #intro input,#intro button{
@@ -217,19 +246,25 @@ position:relative;
     margin: 150px 0 80px;
     display: flex;
     width:100%;
-    padding:0 3%;
+    padding:0 5%;
 }
 
 #left{
-    flex:1;
+    flex:10;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    /* border:2px solid red; */
 }
+#left h1{
+    margin-bottom:30px;
+}
+
 #left p{
-    font-size: 15px;
+    font-size: 14px;
     margin-bottom: 2%;
-    width:90%;   
+    width:80%;   
+    /* border:2px solid red; */
 }
 
 #pageLink{
@@ -277,9 +312,10 @@ position:relative;
 }
 
 #right{
-    flex:1;
+    flex:9;
     display: flex;
     justify-content: flex-end;
+    /* border:2px solid red; */
 }
 #right img{
     max-width: 90%;
@@ -296,6 +332,8 @@ position:relative;
         background-image: url(images/bg-curve-mobile.svg);
         background-size: 500% 100%;
     }
+    #howItWorks h1{font-size: 20px;}
+
     .wrapper{
         flex-direction: column-reverse;
         align-items: center;
@@ -306,15 +344,22 @@ position:relative;
         margin-top:150px;
     }
    
-    #left p{
+    #left #features p{
         margin:auto;
-        margin-bottom: 5%;
+        margin-bottom:5%;
+        word-spacing: 2px;
+        /* border:2px solid black; */
+        width:95%;
 
     }
     #feedback{
         text-align:left; 
-        width:90%;
+        width:80%;
+        padding:5%;
+        /* text-align:center; */
       }
+
+     
       
 }
 
@@ -329,11 +374,12 @@ position:relative;
     background-color: hsl(238, 22%, 44%);
     display:flex;
     justify-content: space-between;
-    padding:5% 3%;  
+    padding:5% 5%;  
 }
 #signUp div{   
      font-size:15px;
-    width:47%;
+    width:40%;
+    /* border:2px solid red; */
 }
 #signUp h1{  
     font-size: 30px;
@@ -342,19 +388,24 @@ position:relative;
 }
 #signUp p{
     color:#fff;
+    font-size:14px;
+    width:97%;
+    line-height: 20px;
+    /* border:2px solid black; */
 }
 #signUp form{
-    width:47%;
+    width:40%;
+    /* border:2px solid red; */
 }
 
 
 #signUp input{
-    width:100%; 
-    margin-bottom: 2%; 
+    width:100%;  
     }
     
     #signUp button{
     width:40%;
+    margin-top:10px;
     }
 
 
@@ -368,19 +419,35 @@ position:relative;
            align-items: center;
            justify-content: center;
         }
+        #signUp h1{
+            font-size:20px;
+        }
       #signUp div{
         width:94%;
         text-align: center;
         margin-bottom:20px;
       }
+      
+      #signUp div{   
+        font-size:15px;
+       width:82%;
+       /* border:2px solid red; */
+   }
+
+      #signUp p{
+        /* width:90%; */
+      }
       #signUp form{
-        width:60%;
+        /* border:2px solid red; */
+        width:80%;
       }
       #signUp input{
-        margin-bottom:15px;
+        /* margin-bottom:15px; */
+        /* width:100%; */
       }
       #signUp button{
         width:100%;
+        /* margin-top:0; */
       }
     }
 
@@ -402,58 +469,100 @@ position:relative;
         
     }
     
-    
+
     
     footer li{
         list-style: none;
         margin-bottom:10px;
     }
     
-    footer a,footer span,#attribution p,em{
+    footer a,footer span,em{
         color:white;
 
         text-decoration: none;
     }
+
+    #fyloIcon{
+        /* border:2px solid red; */
+        margin:5% 5% 1% 5%;
+        /* padding:0 5%; */
+        /* padding-top:3%; */
+        display:flex;
+        /* padding: 2% 5%;    */
+        justify-content:flex-start;
+    }
     .fyloLogo path{
         fill:white;
     }
-    .head{
-        color:white;
-        font-weight: bold;
-    }
+#details{
+    /* border:2px solid red; */
+    margin:1% 5% 5% 5%;
+}
+    
 
     footer #top{
-        display:flex;
-        padding: 2% 3%;   
-        justify-content: space-around;
+      display:flex;
+      flex-direction:column;
     }
   
-    #contactUs span{
-        margin-right:10px;
+   #details{
+      display:flex;
+        /* padding: 2% 5%;    */
+        justify-content:flex-start;
+        
     }
-    .socialIcon img{
-        border:1px solid white;
+
+    #details a:hover,#details span:hover{
+       color:hsl(228,74%,74%);
+       fill:hsl(228,74%,74%);
+    }
+
+
+    #details1,#details2,#details3{
+        margin-right:14%;
+    }
+
+    #details1 span{
+        margin-right:30px;
+    }
+    
+   
+    .socialIcon svg{
+        border:1.5px solid white;
         border-radius: 50%;
-        margin-right: 3px;
-        padding:2px;
+        margin-right: 10px;
+        padding:5px;
+        fill:white;
+        width:30px;
+         height: 30px;
     }
-    #attribution{
-        font-size:10px;
-        padding:1% 0;
-        margin:0 3%;
-        border-top:2px solid white;
-        display:flex;
-        justify-content: space-between;
+   
+    .socialIcon svg:hover{
+        fill:hsl(228,74%,74%) ;
+        border:1.5px solid hsl(228,74%,74%);
+
     }
-  
+
+ 
+
 
 /* FOOTER FOR SMALL SCREEN */
 @media(max-width:750px){
     footer #top{
         display:flex;
         flex-direction: column;
-        padding:10%;
+        padding:5%;
+        /* border:2px solid red; */
     }
+
+#details{
+    display:flex;
+    flex-direction: column;
+    /* align-items:flex-start; */
+    /* justify-content:flex-start; */
+    /* padding:10%; */
+}
+
     #contactUs ul{
         display: flex;
         flex-direction: column;
@@ -466,13 +575,22 @@ position:relative;
         display: flex;
         justify-content: center;
     }
-    .socialIcon{
-        margin:0 5%;
+    #fyloIcon{
+        margin-bottom:5%;
     }
-    /* #attribution{
-        flex-direction: column;
-        align-items: center;
+    #social{
+        display: flex;
         justify-content: center;
-    } */
+    }
 
+    #details1,#details2,#details3{
+        margin-bottom:5%;
+    }
+  
 }
+
+
+
+
+
+
